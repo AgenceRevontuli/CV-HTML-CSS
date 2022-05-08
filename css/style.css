@@ -1,0 +1,628 @@
+/*
+======================
+    RESET CSS
+======================
+*/
+html {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+======================
+    Début du CSS du cours
+======================
+*/
+
+/* 0_Global */ 
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #343B43;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Serif', serif;
+    font-size: 2em;
+    line-height: 1.4em;
+}
+
+p {
+    font-size: 1.16em;
+    line-height: 1.8em;
+}
+
+/* CSS général pour toutes les sections */ 
+section {
+    padding: 100px 14%;
+    text-align: center;
+}
+
+.header-section {
+    margin: 0px 0px 50px 0px;
+}
+
+.xp-cards, .school-cards, .contact-container {
+    text-align: left;
+}
+
+
+/* Boutons */
+
+.button-primary {
+    background: #FFDDAA;
+    padding: 20px 25px;
+
+    display: inline-block;
+    margin: 15px 0px;
+
+    font-size: 1.2em;
+    font-weight: 700;
+
+    text-decoration: none;
+    color: #343B43;
+
+    border-radius: 5px;
+}
+
+section .button-primary {
+    margin-top: 40px;
+}
+
+/* Gestion des couleurs d'arrière plan */ 
+.bg-gris {
+    background: #FAFAFA;
+}
+
+/* 
+======
+Header 
+======
+*/ 
+
+.logo p {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 14%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #343B43;
+    font-weight: 700;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li:last-child {
+    margin-right: 0px;
+    background: #FFDDAA;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+
+/* content du header */
+.header-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-section_col-gauche, .header-section_col-droite {
+    padding: 150px 14%;
+}
+
+/* Colone de Gauche */ 
+
+.header-section_col-gauche {
+    width: 90%;
+}
+
+.header-section_col-gauche h1, .header-section_col-gauche h3, .header-section_col-gauche p{
+    max-width: 950px;
+}
+
+
+.header-section_col-gauche h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.header-section_col-gauche h3 {
+    font-size: 1.5em;
+    color: #747474;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+
+/* Colone de droite */ 
+
+.header-section_col-droite {
+    width: 10%;
+    background: #FFDDAA;
+    position: relative;
+    height: 300px;
+}
+
+/* Image type Polaroïd */
+.polaroid {
+    background: #fff;
+    position: absolute;
+    text-align: center;
+    padding: 35px;
+    box-shadow: -4px 4px 10px rgba(169, 169, 169, 0.25);
+
+    left: -40px; 
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.polaroid p {
+    margin: 20px 0px;
+}
+
+/* Gestion de la flèche orange pour la positionner sur le prénom */ 
+.fleche-orange {
+    position: absolute;
+    bottom: -100px;
+    left: -60px;
+}
+
+
+/* 
+=======
+Section À propos 
+======
+*/
+
+#apropos p {
+    max-width: 700px;
+    margin: 0 auto 0px auto;
+}
+
+/* 
+=======
+Section Mes expériences
+======
+*/
+
+.xp-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.item-card {
+    width: 25%;
+    background: #F7F9FF;
+    padding: 30px 50px;
+
+    border-radius: 15px;
+
+    /* filter: drop-shadow(4px 4px 0px #050505); */
+    box-shadow: 4px 4px 0px #050505;
+}
+
+.item-card:last-child {
+    width: 50%;
+    background: #FFDDAA;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #343B43;
+}
+
+.item-card span {
+    font-size: 1em;
+    font-family: 'Noto Serif', serif;
+}
+
+/* 
+=======
+Section Mes Formations
+======
+*/
+#formations {
+    position: relative;
+}
+
+
+/* Gestion du parent (container) */ 
+.school-cards {
+    position: relative;
+    margin: 250px auto;
+    max-width: 1080px;
+}
+
+/* Gestion des enfants (cartes formation) */
+.school-card {
+    position: absolute;
+    top: 0;
+    width: 35%;
+    background: #fff;
+    border: 1px solid #343B43;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.school-card p {
+    color: #E09018;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.school-card h2 {
+    font-size: 1.4em;
+    margin: 30px 0px;
+}
+
+.card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-head--year, .card-head--alternance {
+    font-family: 'Noto Serif', serif;
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+
+.card-head--year {
+    background: #FFDDAA;
+    font-size: 1.5em;
+    color: #343B43;
+}
+
+.card-head--alternance {
+    background: #A296ED;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+/* Gestion de la timeline centrale */
+.ligne-centrale{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.ligne {
+    display: block;
+    width: 1px;
+    height: 700px;
+    border-left: 2px dashed #FFDDAA;
+}
+
+.rond {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: #FFDDAA;
+    border-radius: 50%;
+}
+
+.rond1, .form1 {top:0px; transform: translateY(-50%);}
+.rond2, .form2  {top:50%; transform: translateY(-50%);}
+.rond3, .form3  {top:100%; transform: translateY(-50%);}
+
+.form1, .form3 {
+    right: 0;
+}
+
+/* 
+=======
+Section Skills
+======
+*/
+
+.skills-cards {
+    margin-top: 150px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    height: 350px;
+}
+
+.skill-card {
+    position: relative;
+    width: 20%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 80px 30px;
+    border-radius: 15px;
+    background: #FFDDAA;
+    box-shadow: 4px 4px 0px #343B43;
+}
+
+.skill-card:nth-child(2n+2){
+    align-self: flex-end;
+}
+
+.skill-card h2 {
+    font-size: 1.4em;
+}
+
+.skill-card--icon {
+    position: absolute;
+    background-color: #FFDDAA;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 0px;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-card--icon img {
+    width: 35%;
+}
+
+/* 
+=======
+Section Contact
+======
+*/
+
+.contact-container {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 15px;
+    background: #FFDDAA;
+}
+
+.contact-container--img img {
+    border-radius: 15px;
+    border: 4px solid #fff;
+}
+
+.contact-container--content h2 {
+    margin-bottom: 40px;
+}
+
+.contact-container--content_info {
+    margin-top: 40px;
+    display: flex;
+    gap: 60px;
+}
+
+.deco-icon {
+    background: #fff;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Noto Serif', serif;
+}
+
+/* Footer */ 
+footer {
+    padding: 80px 14%;
+    background: #FFDDAA;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.2em;
+}
+
+/* Responsive */ 
+/* Explication que vous pouvez trouver sur les media queries 
+
+=====> https://www.alsacreations.com/article/lire/930-css3-media-queries.html
+
+*/
+
+/* Ecran en dessous de 640px
+La media queries vise ici les écrans qui ont une résolution maximum de 640px
+*/ 
+
+@media screen and (max-width: 1000px) {
+    /* Pour tester si ça marche, on supprime tous les éléments de notre site en CSS grâce à la ligne : */
+
+/* 
+=======
+HEADER 
+=======
+*/
+
+    /*Global mobile */ 
+    .xp-cards, .skills-cards, .contact-container, .header-section, .contact-container--content_info {
+        flex-wrap: wrap;
+    }
+
+    /* Header - Mobile */
+
+    .header-section {
+        /* Toutes les règles déjà écrites au dessus, que l'on ne souhaite pas modifier n'ont pas besoin d'être réecrite.*/
+        flex-direction: column-reverse;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /* Colone de gauche */ 
+    .header-section_col-gauche {
+        width: auto;
+        padding: 150px 14% 40px 14%;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    /* Colone de droite */ 
+
+    .header-section_col-droite {
+        width: 100%;
+        height: 100px;
+        box-sizing: border-box;
+    }
+
+    .polaroid {
+        background: #fff;
+        left: 50%;
+        top: 30px;
+        transform: translateY(0%) translateX(-50%);
+    }
+
+    .fleche-orange {
+        position: absolute;
+        bottom: -90px;
+        left: -60px;
+    }
+
+    /* Section À propos mobile */
+
+    #apropos p {
+        font-size: 1.1em;
+    }
+
+    /* section Expériences mobile */ 
+    .item-card, .item-card:last-child {
+        width: 100%;
+    }
+
+    /* section mes formations mobile */
+    .school-cards {
+        margin: 200px auto 150px auto;
+    }
+
+    .school-card {
+        transform: none;
+        width: 70%;
+    }
+
+    .ligne-centrale{
+        justify-content: flex-start;
+    }
+
+   .form1 {top:0px; transform: translateY(-50%); left: 30px;}
+   .form2  {top:50%; transform: translateY(-50%); left: 30px;}
+   .form3  {top:100%; transform: translateY(-50%); left: 30px;}
+
+   .rond1 {top:0px; transform: translateY(-50%) translateX(-50%);}
+   .rond2  {top:50%; transform: translateY(-50%) translateX(-50%);;}
+   .rond3  {top:100%; transform: translateY(-50%) translateX(-50%);;}
+
+   .form1, .form3 {
+    right: inherit; /* Inherit désactive le comportement précédent*/
+    }
+
+    /* Mes compétences mobile */ 
+    .skills-cards {
+        height: inherit;
+        gap: 120px; /* l'icone fait 100px (100/2 = 50). Pour avoir un espace harmonieux entre deux éléments, il faut que le padding soit de plus de 50 entre les éléments. Sachant que l'icone dépasse de 50px. et qu'il est en aboslute (donc le dépassement n'est pas comptabilisé dans le padding, cela fait qu'un padding de 80px (50-80px = 30px) espacera mes éléments de 30px. 
+        Pour palier, j'ai mis 120 car 50-120=70px et 70>50 donc l'espacement marche bien ici */ 
+    }
+
+    .skill-card {
+        width: 100%;
+    }
+
+    /* Contact mobile */
+    .contact-container {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-container, .contact-container--img {
+        width: 100%;
+    }
+
+    .contact-container--img img {
+        width: 100%;
+    }
+
+    .deco-icon {
+        width: 30px;
+    }
+} /* fin de ma partie responsive mobile */
+
+/* Début du responsive entre mobile et Desktop (tablet) */
+
+@media screen and (min-width: 1001px) and (max-width: 1540px) {
+    /* Section Skills tablet */ 
+    .skill-card {
+        min-width: 15%;
+    }
+
+    /* Section Contact Tablet */
+    .contact-container--content_info {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
